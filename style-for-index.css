@@ -44,7 +44,7 @@ section article .atricle-list{
 section article .atricle-list li{
     margin: 20px;
 }
-.atricle-list li:before {
+/* .atricle-list li:before {
     color: rgb(0, 0, 0);
     content: "\f058";
     font-family: Font Awesome\ 5 Free;
@@ -52,6 +52,6 @@ section article .atricle-list li{
     font-size: 0.8em;
     font-weight: 900;
     position: absolute;
-    transform: translateX(calc(-100% - 12px));
+    transform: translateX(calc(-100% - 12px)); */
 }
 /* -------------footer ------------- */
