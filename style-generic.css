@@ -1,0 +1,167 @@
+/* -------------general ------------- */
+/*animation for smooth trasnition between webpages*/
+html{
+    animation: transitionIn 0.2s linear ;
+    scroll-behavior: smooth;
+   
+    
+}
+@keyframes transitionIn {
+    from{
+        opacity: .5;
+       
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+        
+    }
+}
+
+body{
+    background-color: #dc1f0100;
+    font-family: 'Markazi Text',serif;
+    margin: 3rem 5% ;
+    background-color: #d6e80c2c;
+    
+   
+}
+
+body{
+    background-image: url(home_img_transparent77.png);
+    background-repeat: no-repeat;
+    background-position: 30vw 1vw;
+    background-size: 100vw;
+}
+
+
+
+/* -------------header ------------- */
+
+/* -------------nav ------------- */
+nav{
+     
+    margin: 10px;
+    height:auto;
+
+    border-radius:2px 15px ;
+    box-shadow: 1px 2px 5px #00000083;
+    background-color: #e8b10cb9;
+    /*---------------------*/
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    
+}
+#check,.check-btn{
+    display: none;
+}
+
+
+nav ul{
+    margin: .7em; 
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+nav ul a{
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+nav ul a:hover  {
+    color: rgb(232, 230, 230);
+    background-color: rgba(223, 213, 30, 0.3);
+    border-radius: 1px 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.256);
+    transform: scalez(90%);
+    transition: .1s;
+}
+nav ul a:active  {
+    
+    box-shadow: 1px 2px 10px rgb(216, 212, 212); 
+   
+}
+
+
+@media(max-width:450px)  {
+    
+    nav {
+        
+        padding: 5px;
+        width: fit-content;
+        background-color: #e8b20c;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-start;
+        
+    }
+    nav #check{
+        display: none;
+    }
+    nav .check-btn{
+    
+        display: block;
+        margin-bottom: 7px;
+    }
+    nav .check-btn  #svg{
+        width: 20px; 
+    }
+    .check-btn:hover #svg{
+        opacity: .5;;
+        
+    }
+
+
+    nav ul{
+        display: none; 
+    }
+    
+    #check:checked~ul{
+        height: auto;
+        padding-inline-start: 0px; /*div toolيشفت يمين وعرفتها من الcontent دى بتخلى كل ال */
+         align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        transition: 0.6s;
+    }
+    
+    
+
+   
+}
+
+
+/* -------------main ------------- */
+
+/* -------------footer ------------- */
+ footer{
+    margin: 20px;
+    border-radius: 2px 15px;
+    box-shadow: 1px 2px 5px #00000011;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+ }
+ footer>div:nth-child(1){
+    flex: 1 ;
+ }
+ footer>div:nth-child(2){
+
+    flex: 1 ;
+ }
+ div img{
+    width: 20px;
+ }
+ footer div p{
+    font-size: small;
+ }
